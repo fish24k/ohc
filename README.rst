@@ -120,11 +120,16 @@ Available command line options::
  -rkd <arg>    hot key use distribution - default: uniform(1..10000)
  -sc <arg>     number of segments (number of individual off-heap-maps)
  -t <arg>      threads for execution
- -type <arg>   implementation type - default: linked - option: tables
  -vs <arg>     value sizes - default: fixed(512)
  -wkd <arg>    hot key use distribution - default: uniform(1..10000)
  -wu <arg>     warm up - <work-secs>,<sleep-secs>
  -z <arg>      hash table size
+ -cs <arg>     chunk size - if specified it will use the "chunked" implementation
+ -fks <arg>    fixed key size in bytes
+ -fvs <arg>    fixed value size in bytes
+ -mes <arg>    max entry size in bytes
+ -unl          do not use locking - only appropiate for single-threaded mode
+ -hm <arg>     hash algorithm to use - MURMUR3, XX, CRC32
  -bh           show bucket historgram in stats
  -kl <arg>     enable bucket histogram. Default: false
 
